@@ -1,0 +1,21 @@
+2022-12-02T01:46:50+00:00 CRITICAL Uncaught Error: Call to undefined function get_options() in /Applications/MAMP/htdocs/wordpress/wp-content/themes/hello-elementor-child/functions.php:21
+Stack trace:
+#0 /Applications/MAMP/htdocs/wordpress/wp-includes/class-wp-hook.php(308): child_theme_enqueue_style('')
+#1 /Applications/MAMP/htdocs/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/wordpress/wp-includes/script-loader.php(2180): do_action('wp_enqueue_scri...')
+#4 /Applications/MAMP/htdocs/wordpress/wp-includes/class-wp-hook.php(308): wp_enqueue_scripts('')
+#5 /Applications/MAMP/htdocs/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 /Applications/MAMP/htdocs/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#7 /Applications/MAMP/htdocs/wordpress/wp-includes/general-template.php(3043): do_action('wp_head')
+#8 /Applications/MAMP/htdocs/wordpress/wp-content/themes/hello-elementor/header.php(21): wp_head()
+#9 /Applications/MAMP/htdocs/wordpress/wp-includes/template.php(783): require_once('/Applications/M...')
+#10 /Applications/MAMP/htdocs/wordpress/wp-includes/template.php(718): load_template('/Applications/M...', true, Array)
+#11 /Applications/MAMP/htdocs/wordpress/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#12 /Applications/MAMP/htdocs/wordpress/wp-content/themes/hello-elementor/index.php(15): get_header()
+#13 /Applications/MAMP/htdocs/wordpress/wp-includes/template-loader.php(106): include('/Applications/M...')
+#14 /Applications/MAMP/htdocs/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#15 /Applications/MAMP/htdocs/wordpress/index.php(17): require('/Applications/M...')
+#16 {main}
+  thrown in /Applications/MAMP/htdocs/wordpress/wp-content/themes/hello-elementor-child/functions.php on line 21
+

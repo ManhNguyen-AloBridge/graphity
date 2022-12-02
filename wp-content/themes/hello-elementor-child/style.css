@@ -1,0 +1,506 @@
+/*
+Theme Name:   Hello Elementor Child
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Description:  Hello Elementor Child Theme
+Author:       Alobridge
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Template: hello-elementor
+Text Domain:  hello-elementor-child
+*/
+
+
+/*  */
+
+
+/*  */
+:root {
+    --hasu-light-gray-color :#F7F7F7;
+    --hasu-gray-color: #E8E8E8;
+    --hasu-text-color: #707070;
+    --hasu-defaut-font-size: 13px;
+    --hasu-input-bg-gray :#e6eef4;
+    --hasu-label-bg-gray :#e6e6e6;
+    --hasu-white-color: #fff;
+    --hasu-danger-color: #7e0f09;
+    --hasu-mobile-background-color : #ebe9ea;
+    --bg-blue-gradient: linear-gradient(to bottom, #3aacf5, #0072ba 66%, #155a86);
+}
+
+
+.text-danger {  
+    color: var(--hasu-danger-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.text-bold {
+    font-weight: bold;
+}
+
+.max-w-60 {
+    max-width: 60px;
+}
+
+.max-w-70 {
+    max-width: 70px;
+}
+
+.max-w-95 {
+    max-width: 95px;
+}
+
+.max-w-110 {
+    max-width: 110px;
+}
+
+.max-w-200 {
+    max-width: 200px;
+}
+
+.max-w-280 {
+    max-width: 280px;
+}
+
+.inline-divide-bar {
+    display: inline-block;
+    margin-bottom: 4px;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+}
+ 
+.badge {
+    
+    padding: 3px 5px;
+    font-size: 10px;
+    font-weight: bold   ;
+}
+
+.badge.--danger {
+    color: var(--hasu-white-color);
+    background-color: var(--hasu-danger-color);
+}
+
+.d-flex-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+.hidden {
+    display: none;
+}
+/* Flex table */
+
+.flex-table-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.flex-table-row .flex-table-column {
+    width: 100%;
+}
+.flex-table-row .flex-table-column.--col-1 {
+    flex-basis: 8.3333333%;
+}
+.flex-table-row .flex-table-column.--col-2 {
+    flex-basis: 16.6666666%;
+}
+.flex-table-row .flex-table-column.--col-3 {
+    flex-basis: 25%;
+}
+.flex-table-row .flex-table-column.--col-4 {
+    flex-basis: 33.3333333%;
+}
+.flex-table-row .flex-table-column.--col-5 {
+    flex-basis: 41.6666666%;
+}
+.flex-table-row .flex-table-column.--col-6 {
+    flex-basis: 50%;
+}
+.flex-table-row .flex-table-column.--col-7 {
+    flex-basis: 58.3333333%;
+}
+.flex-table-row .flex-table-column.--col-8 {
+    flex-basis: 66.6666666%;
+}
+.flex-table-row .flex-table-column.--col-9 {
+    flex-basis: 75%;
+}
+.flex-table-row .flex-table-column.--col-10 {
+    flex-basis: 83.3333333%;
+}
+.flex-table-row .flex-table-column.--col-11 {
+    flex-basis: 91.6666666%;
+}
+.flex-table-row .flex-table-column.--col-12 {
+    flex-basis: 100%;
+}
+
+/* HASU */
+.hasu-section input,
+.hasu-section select,
+.hasu-section button,
+.hasu-section textarea {
+    font-size: var(--hasu-defaut-font-size);
+    color: var(--hasu-text-color);
+}
+
+.hasu-button,
+.hasu-button[type=submit],
+.hasu-button[type=button]  {
+    min-width: 240px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 999px ;
+    text-align: center;
+    font-size: var(--hasu-defaut-font-size);
+    font-weight: bold;
+    color: var(--hasu-text-color);
+    text-decoration: none;
+}
+
+.hasu-button.--outline {
+    border: 1px solid currentColor;
+}
+
+.hasu-button.--thin {
+    padding: 10px 20px;
+}
+
+.hasu-button.--expand {
+    display: inline-block;
+    width: 100%;
+}
+
+.hasu-button.--bg-dark {
+    background-image: linear-gradient(to bottom, #93999d, #565658);
+}
+
+.hasu-button.--bg-white {
+    background-color: var(--hasu-white-color);
+}
+
+.hasu-button.--dark {
+    color: var(--hasu-white-color);
+}
+.hasu-button.--bg-blue-gradient {
+    background-image: var(--bg-blue-gradient);
+}
+
+.hasu-section {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto 80px auto;
+    padding: 40px 50px 50px 50px;
+    border-radius: 20px;
+    font-size: var(--hasu-defaut-font-size);
+    color: var(--hasu-text-color);
+}
+.hasu-section.payment-type-section,
+.hasu-section.login-section {
+    margin-bottom: 30px;
+}
+.hasu-section.link-to-login-section {
+    background-color: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+}
+.hasu-section.login-section {
+padding: 0;
+}
+
+.hasu-section.--bg-gray {
+
+    border: 1px solid var(--hasu-gray-color);
+    background-color: var(--hasu-light-gray-color);
+
+}
+.hasu-section-title {
+    margin: 0 auto 25px auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Custom select max-width */
+.payment-method.flex-table-row .hasu-drop-date-select .dropdate-select {
+    max-width: 200px;
+}
+
+.specify-delivery-time.flex-table-row .hasu-drop-date-select .dropdate-select {
+    max-width: 120px;
+}
+
+.district.flex-table-row .hasu-drop-date-select .dropdate-select {
+    max-width: 140px;
+}
+
+.message.flex-table-row textarea.hasu-form-input {
+    min-height: 160px;
+    border: none;
+    outline: none;
+    display: flex;
+}
+
+.hasu-section.register-button-section label {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.hasu-section.register-button-section label input {
+    vertical-align: top;
+}
+
+.hasu-section.register-button-section .hasu-button {
+    padding: 30px 180px 30px 180px;
+}
+
+.hasu-section.payment-type-section {
+    padding-bottom: 23px;
+}
+
+.hasu-section.payment-type-section .hasu-button {
+    margin-bottom: 15px;
+}
+
+.payment-types {
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    margin: auto;
+}
+
+.payment-types .payment-type__prices {
+    width: fit-content;
+    margin: auto;
+}
+.payment-types .payment-type__price {
+    display: flex;
+    margin-bottom: 5px;
+    gap: 20px;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+/* Form */
+.hasu-section .hasu-form-input{
+    padding: 6px 10px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+}
+.hasu-section .hasu-form-input.--bg-gray {
+    border: none;
+    outline: none;
+    background-color: var(--hasu-input-bg-gray );
+}
+
+
+.hasu-form-group.inline-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hasu-form-group + .hasu-form-group {
+    margin-top: 10px;
+}
+
+.hasu-form-group.inline-group input {
+    width: 100%;
+    font-size: var(--hasu-defaut-font-size);
+}
+
+select.hasu-base-select {
+    width: min-content !important;
+    padding: 6px 10px;
+}
+
+.hasu-radio-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 6px 0;
+}
+
+.hasu-drop-date-select .dropdate-select{
+    background-color: var(--hasu-input-bg-gray);
+    border-color: var(--hasu-input-bg-gray );
+    outline: none;
+}
+
+.hasu-drop-date-select .dropdate-select {
+    display: inline-block; 
+    padding: 6px 10px;
+}
+
+.hasu-drop-date-select .dropdate-select + .dropdate-select  {
+    margin-left: 10px;
+}
+
+.hasu-drop-date-select .dropdate-select {
+    max-width: 60px;
+}
+
+.hasu-drop-date-select .dropdate-select.year {
+    max-width: 95px;
+}
+
+.card-expiry-select {
+    display: flex;
+    gap: 25px;
+}
+
+
+/* Auth Form */
+.hasu-auth-form {
+    margin: 0 auto;
+    max-width: 420px;
+}
+.hasu-auth-form  .hasu-form-group.inline-group input {
+    max-width: 280px;
+}
+
+
+.hasu-auth-form .woocommerce-LostPassword  {
+    text-align: right;
+    
+}
+
+.hasu-auth-form .woocommerce-LostPassword a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Normal */
+.hasu-label-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+}
+
+/*  */
+.user-information.flex-table .flex-table-column {
+    padding: 12.5px;
+}
+
+.user-information.flex-table .flex-table-row > .flex-table-column:first-child {
+    background-color: var(--hasu-label-bg-gray);
+}
+
+.user-information.flex-table {
+    background-color: var(--hasu-white-color);
+}
+
+.user-information.flex-table .flex-table-column + .flex-table-column{
+    border-left: 1px solid var(--hasu-light-gray-color);
+}
+
+.user-information.flex-table .flex-table-row:not(:last-child){
+    border-bottom: 1px solid var(--hasu-light-gray-color);
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-show {
+        display: block;
+    }
+
+    .hasu-button.--mobile-expand {
+        display: inline-block;
+        width: 100%;
+    }
+
+    /* Flex table */
+    .flex-table-row.--mobile-can-break {
+        flex-wrap: wrap;
+    }
+    .flex-table-row .flex-table-column.--mobile-1 {
+        flex-basis: 8.3333333%;
+    }
+    .flex-table-row .flex-table-column.--mobile-2 {
+        flex-basis: 16.6666666%;
+    }
+    .flex-table-row .flex-table-column.--mobile-3 {
+        flex-basis: 25%;
+    }
+    .flex-table-row .flex-table-column.--mobile-4 {
+        flex-basis: 33.3333333%;
+    }
+    .flex-table-row .flex-table-column.--mobile-5 {
+        flex-basis: 41.6666666%;
+    }
+    .flex-table-row .flex-table-column.--mobile-6 {
+        flex-basis: 50%;
+    }
+    .flex-table-row .flex-table-column.--mobile-7 {
+        flex-basis: 58.3333333%;
+    }
+    .flex-table-row .flex-table-column.--mobile-8 {
+        flex-basis: 66.6666666%;
+    }
+    .flex-table-row .flex-table-column.--mobile-9 {
+        flex-basis: 75%;
+    }
+    .flex-table-row .flex-table-column.--mobile-10 {
+        flex-basis: 83.3333333%;
+    }
+    .flex-table-row .flex-table-column.--mobile-11 {
+        flex-basis: 91.6666666%;
+    }
+    .flex-table-row .flex-table-column.--mobile-12 {
+        flex-basis: 100%;
+    }
+
+    /* HASU */
+    #content {
+        padding: 20px;
+        background-color: var(--hasu-mobile-background-color);
+    }
+
+    .hasu-section {
+        margin-bottom: 50px;
+        padding: 25px 20px;
+        border-radius: 10px;
+        background-color: var(--hasu-white-color) ;
+    }
+    .hasu-section.--mobile-bg-white {
+        background-color: var(--hasu-white-color);
+    } 
+    .hasu-section.register-button-section .hasu-button {
+        display: block;
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+    /* Login form */
+    .hasu-auth-form form .hasu-form-group.inline-group {
+        display: block;
+    }
+    .hasu-auth-form form .hasu-form-group.inline-group  label{
+        margin-bottom: 10px;
+    }
+    /* custom Flex table */
+    .user-information.flex-table .flex-table-row:not(:last-child) {
+        border-bottom: none;
+        margin-bottom: 30px;
+    }
+
+    .user-information.flex-table .flex-table-row > .flex-table-column {
+        border-left: none;
+        padding: 0px;
+    }
+    .user-information.flex-table .flex-table-row > .flex-table-column:first-child {
+        background-color: unset;
+        margin-bottom: 10px;
+    }
+}
